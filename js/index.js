@@ -36,9 +36,9 @@ function next() {
 }
 
 
-async function createUserFields() {
+function createUserFields() {
 
-    const userData = await functions.userDataRequest();
+    const userData = functions.userDataRequest();
     const templateUserField = document.querySelector('.js-user-field');
     
     userData.forEach( (data, index) => {
@@ -52,6 +52,6 @@ async function createUserFields() {
 }
 
 
-window.onload = async function() {
+window.onload = function() {
     createUserFields();
 };
