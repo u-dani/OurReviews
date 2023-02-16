@@ -1,0 +1,9 @@
+
+@use 'variables' as *;
+
+* {
+    box-sizing: border-box;
+    font-family: $font-family-default;
+    margin: 0;
+    padding: 0;
+}

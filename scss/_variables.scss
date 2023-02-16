@@ -1,0 +1,17 @@
+
+$font-family-default: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+
+$width-field-user: 250px;
+$height-field-user: 400px;
+$gap-between-user: 30px;
+
+$width-container-users--pc: ($width-field-user * 3) + $gap-between-user * 2;
+$width-container-users--tablet: ($width-field-user * 2) + $gap-between-user * 1;
+$width-container-users--mobile: ($width-field-user * 1) + $gap-between-user * 0;
+$height-container-users: 330px;
+
+
+
+$width-tablet: 900px;
+$width-mobile: 600px;
+

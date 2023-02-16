@@ -1,0 +1,69 @@
+
+@use 'variables' as *;
+
+.c-title {
+    font-size: 2.6em;
+    text-align: center;
+}
+
+.c-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    z-index: 200;
+
+    &--prev {
+        left: 0px;
+        transform: scale(-1);
+    }
+
+    &--next {
+        right: 0px;
+    }
+}
+
+.c-user-field {
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    max-width: $width-field-user;
+    min-width: $width-field-user;
+    padding: 10px;
+    text-align: center;
+
+    &__image {
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        border: 1px solid #333;
+        width: 60%;
+    }
+
+    &__name {
+        font-size: 1.1em;
+        font-weight: bold;
+        letter-spacing: .5px;
+    }
+
+    &__profession {
+        font-size: .9em;
+        color: #333;
+    }
+
+    &__review {
+        font-size: 1em;
+        color: #333;
+    }
+
+    &--template {
+        display: none;
+    }
+
+    &:nth-child(2) {
+        transition: 1s;
+    }
+}

@@ -1,0 +1,32 @@
+
+@use 'variables' as *;
+
+.l-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+
+.l-container-users {
+    display: flex;
+    gap: $gap-between-user;
+    height: $height-container-users;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    width: $width-container-users--pc ;
+
+    @media ( max-width: $width-tablet ) {
+        width: $width-container-users--tablet;
+    }
+
+    @media ( max-width: $width-mobile ) {
+        width: $width-container-users--mobile;
+    }
+}
